@@ -1,0 +1,12 @@
+# Dependances directes du script et des modules Analysis appeles.
+# Installer torch/torchvision separement selon CPU/CUDA (voir README).
+# Versions Ultralytics/Transformers reprises du depot local : APIs internes utilisees.
+ultralytics==8.4.126
+transformers==5.16.1
+numpy
+opencv-python
+imageio-ffmpeg
+safetensors
+onnx
+onnxruntime
+lap

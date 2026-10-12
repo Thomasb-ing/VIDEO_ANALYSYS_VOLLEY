@@ -1,0 +1,119 @@
+{
+  "archive_sha256": "637147c95a24cb3c4de147d65a7f5ef7675a256a85174e28943e2654ebcd3ba8",
+  "method": "Static in-memory inspection only; no model loading/inference. ONNX protobuf structure parsed without runtime. HDF5 contents not deeply inspected.",
+  "defender": "Access denied; no antivirus verdict obtained.",
+  "files": [
+    {
+      "name": "vb-models/VballNetV1_150.keras",
+      "bytes": 572992,
+      "zip_crc_error": null,
+      "members": [
+        "metadata.json",
+        "config.json",
+        "model.weights.h5"
+      ],
+      "hdf5_magic_ok": true,
+      "custom_layers": [
+        {
+          "module": "model.VballNetV1",
+          "class_name": "MotionPromptLayer",
+          "registered_name": "MotionPromptLayer"
+        },
+        {
+          "module": "model.VballNetV1",
+          "class_name": "FusionLayerTypeB",
+          "registered_name": "FusionLayerTypeB"
+        }
+      ],
+      "function_references": [
+        {
+          "module": "builtins",
+          "class_name": "function",
+          "config": "custom_loss",
+          "registered_name": "function"
+        }
+      ],
+      "suspicious_config": []
+    },
+    {
+      "name": "vb-models/VballNetV1_150_h288_w512.onnx",
+      "bytes": 170369,
+      "producer": "tf2onnx",
+      "producer_version": "1.16.1 3dd772",
+      "operators": {
+        "Reshape": 7,
+        "Mul": 12,
+        "Add": 16,
+        "Conv": 13,
+        "Relu": 6,
+        "MaxPool": 2,
+        "Unsqueeze": 8,
+        "Tile": 4,
+        "Transpose": 5,
+        "Shape": 5,
+        "Gemm": 1,
+        "Gather": 3,
+        "Cast": 8,
+        "Slice": 15,
+        "Concat": 8,
+        "Squeeze": 6,
+        "Sub": 2,
+        "Abs": 1,
+        "Exp": 1,
+        "Reciprocal": 1,
+        "Sigmoid": 1
+      },
+      "domains": [
+        ""
+      ],
+      "external_initializers": [],
+      "subgraphs": [],
+      "local_functions": 0,
+      "training_info": 0
+    },
+    {
+      "name": "vb-models/VballNetFastV1_155.keras",
+      "bytes": 246365,
+      "zip_crc_error": null,
+      "members": [
+        "metadata.json",
+        "config.json",
+        "model.weights.h5"
+      ],
+      "hdf5_magic_ok": true,
+      "custom_layers": [],
+      "function_references": [
+        {
+          "module": "builtins",
+          "class_name": "function",
+          "config": "custom_loss",
+          "registered_name": "function"
+        }
+      ],
+      "suspicious_config": []
+    },
+    {
+      "name": "vb-models/VballNetFastV1_155_h288_w512.onnx",
+      "bytes": 49982,
+      "producer": "tf2onnx",
+      "producer_version": "1.16.1 3dd772",
+      "operators": {
+        "Conv": 15,
+        "Mul": 7,
+        "Add": 8,
+        "Relu": 7,
+        "MaxPool": 3,
+        "Resize": 3,
+        "Concat": 3,
+        "Sigmoid": 1
+      },
+      "domains": [
+        ""
+      ],
+      "external_initializers": [],
+      "subgraphs": [],
+      "local_functions": 0,
+      "training_info": 0
+    }
+  ]
+}

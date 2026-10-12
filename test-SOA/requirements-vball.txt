@@ -1,0 +1,5 @@
+# Inference ONNX uniquement. Aucun besoin de TensorFlow/PyTorch/pandas.
+numpy
+opencv-python
+onnx
+onnxruntime
